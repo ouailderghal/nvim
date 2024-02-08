@@ -81,6 +81,7 @@ local servers = {
   gopls = {},
   tsserver = {},
   solargraph=  {},
+  html = { filetypes = { 'html' }},
 
   lua_ls = {
     Lua = {
