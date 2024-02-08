@@ -19,6 +19,7 @@ vim.defer_fn(function()
       'bash',
       'ruby',
       'pkl',
+      'haskell'
     },
 
     -- Autoinstall languages that are not installed. Defaults to false (but you can change for yourself!)
