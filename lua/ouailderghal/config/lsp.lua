@@ -82,6 +82,7 @@ local servers = {
   tsserver = {},
   solargraph=  {},
   html = { filetypes = { 'html' }},
+  hls = {},
 
   lua_ls = {
     Lua = {
