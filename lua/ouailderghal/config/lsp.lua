@@ -88,6 +88,7 @@ local servers = {
   ansiblels = {},
   yamlls = {},
   jsonls = {},
+  texlab = {},
 
   lua_ls = {
     Lua = {
