@@ -84,6 +84,7 @@ local servers = {
   html = { filetypes = { 'html' }},
   hls = {},
   dockerls = {},
+  ansiblels = {},
 
   lua_ls = {
     Lua = {
