@@ -80,6 +80,7 @@ local servers = {
   clangd = {},
   gopls = {},
   tsserver = {},
+  solargraph=  {},
 
   lua_ls = {
     Lua = {
