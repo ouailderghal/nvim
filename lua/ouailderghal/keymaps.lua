@@ -13,6 +13,12 @@ vim.keymap.set('n', ']d', vim.diagnostic.goto_next, { desc = 'Go to next diagnos
 vim.keymap.set('n', '<leader>e', vim.diagnostic.open_float, { desc = 'Open floating diagnostic message' })
 vim.keymap.set('n', '<leader>q', vim.diagnostic.setloclist, { desc = 'Open diagnostics list' })
 
+-- Fugitive bindings
+vim.keymap.set('n', '<leader>gg', '<cmd>:tab Git<cr>', { desc = 'Open Git status' })
+vim.keymap.set('n', '<leader>gl', '<cmd>:tab Git log<cr>', { desc = 'Open Git log' })
+vim.keymap.set('n', '<leader>glo', '<cmd>:tab Git log --oneline<cr>', { desc = 'Open Git log in one line' })
+vim.keymap.set('n', '<leader>gp', '<cmd>:tab Git push<cr>', { desc = 'Git push' })
+
 -- Custom keymap
 vim.keymap.set('n', '<leader>bd', '<cmd>:bdelete<cr>')
 vim.keymap.set('n', '<leader>qq', '<cmd>:quit!<cr>')
