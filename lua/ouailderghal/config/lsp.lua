@@ -84,6 +84,7 @@ local servers = {
   html = { filetypes = { 'html' }},
   hls = {},
   dockerls = {},
+  docker_compose_language_service = {},
   ansiblels = {},
   yamlls = {},
   jsonls = {},
