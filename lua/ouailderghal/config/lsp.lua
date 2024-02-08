@@ -85,6 +85,8 @@ local servers = {
   hls = {},
   dockerls = {},
   ansiblels = {},
+  yamlls = {},
+  jsonls = {},
 
   lua_ls = {
     Lua = {
