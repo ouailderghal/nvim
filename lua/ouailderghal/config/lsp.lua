@@ -83,6 +83,7 @@ local servers = {
   tsserver = {},
   html = { filetypes = { 'html' }},
   hls = {},
+  dockerls = {},
 
   lua_ls = {
     Lua = {
