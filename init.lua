@@ -6,7 +6,7 @@ require('lazy').setup({
     { import = 'ouailderghal.plugins' },
 })
 
-SetTheme('onedark')
+SetTheme('carbonfox')
 
 require("ouailderghal.config")
 require("ouailderghal.keymaps")

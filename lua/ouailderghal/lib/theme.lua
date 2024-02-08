@@ -8,6 +8,9 @@ function SetTheme(theme)
 	elseif theme == 'gruvbox_light' then
 		vim.o.background = "light"
 		vim.cmd([[colorscheme gruvbox]])
+	elseif theme == 'carbonfox' then
+		vim.o.background = "dark"
+		vim.cmd([[colorscheme carbonfox]])
 	end
 end
 

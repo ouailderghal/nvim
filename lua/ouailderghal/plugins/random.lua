@@ -5,6 +5,7 @@ return {
   'vimwiki/vimwiki',
   'folke/zen-mode.nvim',
   'apple/pkl-neovim',
+  'EdenEast/nightfox.nvim',
 
   { "numToStr/Comment.nvim", opts = {} },
 }
