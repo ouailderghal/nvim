@@ -81,7 +81,6 @@ local servers = {
   pyright = {},
   gopls = {},
   tsserver = {},
-  solargraph=  {},
   html = { filetypes = { 'html' }},
   hls = {},
 
