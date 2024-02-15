@@ -6,6 +6,7 @@ return {
   'folke/zen-mode.nvim',
   'apple/pkl-neovim',
   'EdenEast/nightfox.nvim',
+  'xiyaowong/transparent.nvim',
 
   { "numToStr/Comment.nvim", opts = {} },
 }
