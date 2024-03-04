@@ -82,7 +82,6 @@ local servers = {
   gopls = {},
   tsserver = {},
   html = { filetypes = { 'html' }},
-  hls = {},
   dockerls = {},
   docker_compose_language_service = {},
   ansiblels = {},
