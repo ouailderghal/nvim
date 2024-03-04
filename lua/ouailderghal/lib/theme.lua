@@ -1,4 +1,4 @@
-function SetTheme(theme)
+function set_theme(theme)
 	if theme == 'onedark' then
 		require('onedark').setup { style = 'dark' }
 		require('onedark').load()
@@ -11,6 +11,9 @@ function SetTheme(theme)
 	elseif theme == 'carbonfox' then
 		vim.o.background = "dark"
 		vim.cmd([[colorscheme carbonfox]])
+	elseif theme == 'nightfox' then
+		vim.o.background = "dark"
+		vim.cmd([[colorscheme nightfox]])
 	end
 end
 
