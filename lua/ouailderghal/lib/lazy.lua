@@ -1,4 +1,4 @@
-function InitLazy(path)
+function init_lazy(path)
 	local lazypath = vim.fn.stdpath 'data' .. path
 
 	if not vim.loop.fs_stat(lazypath) then
