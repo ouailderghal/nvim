@@ -22,6 +22,7 @@ vim.defer_fn(function()
       'haskell',
       'markdown',
       'terraform',
+      'nix',
     },
 
     -- Autoinstall languages that are not installed. Defaults to false (but you can change for yourself!)
