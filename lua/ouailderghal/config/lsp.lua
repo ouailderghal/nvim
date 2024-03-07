@@ -89,6 +89,7 @@ local servers = {
   jsonls = {},
   texlab = {},
   bashls = {},
+  rnix = {},
 
   lua_ls = {
     Lua = {
