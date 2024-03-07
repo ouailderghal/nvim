@@ -22,3 +22,4 @@ vim.o.textwidth = 120
 vim.api.nvim_set_option_value("colorcolumn", "120", {})
 vim.o.cursorline = true
 vim.wo.wrap = false
+vim.o.guicursor = ""
