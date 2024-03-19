@@ -14,6 +14,8 @@ function set_theme(theme)
 	elseif theme == 'nightfox' then
 		vim.o.background = "dark"
 		vim.cmd([[colorscheme nightfox]])
+	elseif theme == 'kanagawa' then
+		vim.cmd([[colorscheme kanagawa]])
 	end
 end
 

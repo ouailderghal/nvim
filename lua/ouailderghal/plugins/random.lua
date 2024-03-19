@@ -7,6 +7,7 @@ return {
   'apple/pkl-neovim',
   'EdenEast/nightfox.nvim',
   'xiyaowong/transparent.nvim',
+  'rebelot/kanagawa.nvim',
 
   { "numToStr/Comment.nvim", opts = {} },
 }
