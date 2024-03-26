@@ -16,6 +16,8 @@ function set_theme(theme)
 		vim.cmd([[colorscheme nightfox]])
 	elseif theme == 'kanagawa' then
 		vim.cmd([[colorscheme kanagawa]])
+	elseif theme == 'moonfly' then
+		vim.cmd([[colorscheme moonfly]])
 	end
 end
 
