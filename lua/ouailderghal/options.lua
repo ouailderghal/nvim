@@ -38,6 +38,9 @@ vim.opt.scrolloff = 10
 vim.opt.list = false
 vim.opt.listchars = { trail = "·", tab = "» ", nbsp = "␣" }
 
+-- Treat words joined by - as a single word
+vim.opt.iskeyword:append("-")
+
 -- Indentation and formatting
 vim.opt.smartindent = true
 vim.opt.autoindent = true
