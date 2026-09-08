@@ -1,6 +1,6 @@
 return {
   "nvim-treesitter/nvim-treesitter",
-  cond = true,
+  cond = false,
 
   build = ":TSUpdate",
   ft = {
