@@ -1,72 +1,70 @@
 return {
-  "ellisonleao/gruvbox.nvim",
+  "navarasu/onedark.nvim",
   cond = true,
   priority = 1000,
 
   config = function()
-    require("gruvbox").setup({
-      terminal_colors = true,
-      undercurl = true,
-      underline = true,
-      bold = true,
-      italic = {
-        strings = true,
-        emphasis = true,
-        comments = true,
-        operators = false,
-        folds = true,
+    require("onedark").setup({
+      style = "dark", -- dark, darker, cool, deep, warm, warmer, light
+      transparent = false,
+      term_colors = true,
+      ending_tildes = false,
+      cmp_itemkind_reverse = false,
+
+      code_style = {
+        comments = "italic",
+        keywords = "bold",
+        functions = "bold",
+        strings = "italic",
+        variables = "none",
       },
-      strikethrough = true,
-      invert_selection = false,
-      invert_signs = false,
-      invert_tabline = false,
-      invert_intend_guides = false,
-      inverse = true, -- invert background for search, diffs, statuslines...
-      contrast = "", -- can be "hard", "soft" or empty string
-      palette_overrides = {},
-      dim_inactive = false,
-      transparent_mode = false,
+
+      diagnostics = {
+        darker = false,
+        undercurl = true,
+        background = true,
+      },
 
       -- Override highlight groups
-      overrides = {
+      highlights = {
         -- Editor chrome
-        CursorLine              = { bg = "#3c3836" },
-        LineNr                  = { fg = "#7c6f64" },
-        CursorLineNr            = { fg = "#fabd2f", bold = true },
-        MatchParen              = { fg = "#fe8019", bold = true, underline = true },
-        Search                  = { fg = "#282828", bg = "#fabd2f", bold = true },
-        IncSearch                = { fg = "#282828", bg = "#fe8019", bold = true },
+        CursorLine   = { bg = "#2c323c" },
+        LineNr       = { fg = "#5c6370" },
+        CursorLineNr = { fg = "#e5c07b", fmt = "bold" },
+        MatchParen   = { fg = "#d19a66", fmt = "bold,underline" },
+        Search       = { fg = "#282c34", bg = "#e5c07b", fmt = "bold" },
+        IncSearch    = { fg = "#282c34", bg = "#d19a66", fmt = "bold" },
 
         -- Syntax
-        ["@keyword"]            = { fg = "#d3869b", bold = true },
-        ["@keyword.return"]     = { fg = "#fb4934", bold = true },
-        ["@function"]           = { fg = "#83a598", bold = true },
-        ["@function.builtin"]   = { fg = "#8ec07c", bold = true },
-        ["@type"]               = { fg = "#fabd2f", bold = true },
-        ["@type.builtin"]       = { fg = "#fabd2f", bold = true, italic = true },
-        ["@constant"]           = { fg = "#d3869b", bold = true },
-        ["@constant.builtin"]   = { fg = "#d3869b", bold = true, italic = true },
-        ["@string"]             = { fg = "#b8bb26", italic = true },
-        ["@comment"]            = { fg = "#928374", italic = true },
-        ["@variable"]           = { fg = "#ebdbb2" },
-        ["@variable.builtin"]   = { fg = "#fb4934", italic = true },
-        ["@parameter"]          = { fg = "#fe8019" },
-        ["@field"]              = { fg = "#ebdbb2" },
-        ["@property"]           = { fg = "#ebdbb2" },
-        ["@operator"]           = { fg = "#8ec07c" },
-        ["@punctuation.bracket"]= { fg = "#ebdbb2" },
+        ["@keyword"]             = { fg = "#c678dd", fmt = "bold" },
+        ["@keyword.return"]      = { fg = "#e06c75", fmt = "bold" },
+        ["@function"]            = { fg = "#61afef", fmt = "bold" },
+        ["@function.builtin"]    = { fg = "#56b6c2", fmt = "bold" },
+        ["@type"]                = { fg = "#e5c07b", fmt = "bold" },
+        ["@type.builtin"]        = { fg = "#e5c07b", fmt = "bold,italic" },
+        ["@constant"]            = { fg = "#c678dd", fmt = "bold" },
+        ["@constant.builtin"]    = { fg = "#c678dd", fmt = "bold,italic" },
+        ["@string"]              = { fg = "#98c379", fmt = "italic" },
+        ["@comment"]             = { fg = "#5c6370", fmt = "italic" },
+        ["@variable"]            = { fg = "#abb2bf" },
+        ["@variable.builtin"]    = { fg = "#e06c75", fmt = "italic" },
+        ["@parameter"]           = { fg = "#d19a66" },
+        ["@field"]               = { fg = "#abb2bf" },
+        ["@property"]            = { fg = "#abb2bf" },
+        ["@operator"]            = { fg = "#56b6c2" },
+        ["@punctuation.bracket"] = { fg = "#abb2bf" },
 
         -- Diagnostics
-        DiagnosticError         = { fg = "#fb4934" },
-        DiagnosticWarn          = { fg = "#fabd2f" },
-        DiagnosticInfo          = { fg = "#83a598" },
-        DiagnosticHint          = { fg = "#b8bb26" },
-        DiagnosticUnderlineError= { undercurl = true, sp = "#fb4934" },
-        DiagnosticUnderlineWarn = { undercurl = true, sp = "#fabd2f" },
+        DiagnosticError          = { fg = "#e06c75" },
+        DiagnosticWarn           = { fg = "#e5c07b" },
+        DiagnosticInfo           = { fg = "#61afef" },
+        DiagnosticHint           = { fg = "#98c379" },
+        DiagnosticUnderlineError = { fmt = "undercurl", sp = "#e06c75" },
+        DiagnosticUnderlineWarn  = { fmt = "undercurl", sp = "#e5c07b" },
       },
     })
 
     vim.o.background = "dark"
-    vim.cmd("colorscheme gruvbox")
+    vim.cmd("colorscheme onedark")
   end,
 }
